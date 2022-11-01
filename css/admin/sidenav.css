@@ -1,0 +1,116 @@
+#main-navbar {
+  width: 300px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #7ECCF8;
+}
+
+.nav1 {
+  margin-top: 10rem;
+}
+
+.top-navbar {
+  background-color: #7ECCF8;
+}
+
+.nav-link {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: black;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+}
+
+.settings-content {
+  font-size: 1.10em;
+  font-weight: 500;
+  color: black;
+}
+
+.settings-content-btn {
+  padding-left: 35px;
+}
+
+.arrow {
+  margin-left: 90px;
+  width: 18px;
+  height: 18px;
+  padding: 0px 0px;
+  transform: rotate(270deg);
+}
+
+.settings[aria-expanded="false"] .arrow {
+  transform: rotateZ(270deg);
+  transition-duration: 0.35s;
+}
+
+.settings[aria-expanded="true"] .arrow {
+  transform: rotateZ(90deg);
+  transition-duration: 0.35s;
+}
+
+.sidebar,
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar {
+  left: -100%;
+  max-width: 280px;
+  transition: all ease 0.25s;
+  background-color: #7ECCF8;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.overlay {
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000bf;
+  visibility: hidden;
+
+}
+
+.top-navbar.active .sidebar {
+  left: 0;
+}
+
+.top-navbar.active .overlay {
+  visibility: visible;
+}
+
+@media screen and (max-width: 900px) {
+  #main-navbar {
+    visibility: collapse;
+  }
+}
+
+@media screen and (max-height: 491px) {
+  #main-navbar {
+    visibility: collapse;
+  }
+  .top-navbar {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .top-navbar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .companyName {
+    display: none;
+  }
+}

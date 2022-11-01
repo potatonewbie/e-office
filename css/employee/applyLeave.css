@@ -1,0 +1,33 @@
+.content {
+    padding: 0 40px 0px 40px;
+    margin: 48px 0px 40px 300px;
+}
+
+.card {
+    border-radius: 18px !important;
+}
+
+.input-form {
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+.text-to {
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        padding: 0 10px 10px 10px;
+        margin-left: 5px;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-height: 491px) {
+    .content {
+        padding: 0 10px 10px 10px;
+        margin-left: 5px;
+        margin-top: 5rem;
+    }
+}
